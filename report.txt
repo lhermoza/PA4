@@ -1,0 +1,6 @@
+Luis Hermoza
+Report
+The overview of this assignment was to create our own cache simulator. I used my variables cacheSize, assoc, and bitsize as the iput parameters of cache size, associativity, and block size. I did implement "LRU" as the replacement policy. For the LRU policy I simply implemented an algorithm that puts the most recently used node at the beginning of the "bit" (block size) linked list and shift every node one step to the right to remove the LRU node. I used a power of 2 method name "bits" because we can assume the memory size is 2^48 bytes.
+For prefetching, half the misses without prefetching were actually hits when prefetching the cache reads. Which is ideal, we want prefetch to do this, so this code did a similar thing, hence cache simulator. Overall prefetch in first.c was very efficeint rather if we did not have one. 
+
+
